@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hash 값 조회 결과입니다.</title>
+</head>
+<body>
+    {% if id == 1 %}
+        Whitelist와 Blacklist에 모두 존재합니다. <br><br>
+        whitelist내의 총 개수는 {{ whiteCnt }}이고
+        blacklist내의 총 개수는 {{ blackCnt }} 입니다.
+    {% elif id == 2 %}
+        whitelist에만 존재합니다. <br><br>
+        whitelist내의 총 개수는 {{ whiteCnt }}개 입니다.
+    {% elif id == 3 %}
+        Blacklist에만 존재합니다. <br><br>
+        blacklist내의 총 개수는 {{ blackCnt }}개 입니다.
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>정보들을 조회할 수 있는 페이지입니다.</h1>
+
+<table border="1" >
+
+<tr align="center">
+    <form action="{% url 'checks:whitelistAPI' %}" method="get" >
+        {% csrf_token %}
+        <td>&nbsp;&nbsp;API 보고싶다.&nbsp;&nbsp;</td>
+        <td>&nbsp;<input type="text" id="cert_sha1_hash" name="cert_sha1_hash" placeholder="cert_sha1 hash 값을 입력하세요!" style="width:350px;">
+        <input type="submit" value="조회하기"></td>
+    </form>
+</tr>
+<tr>
+    <form action="/admin">
+        {% csrf_token %}
+        <td colspan="3" align="center">
+            <input type="submit" value="Admin으로 넘어가기!!"><br>
+        </td>
+    </form>
+</tr>
+</table>
+<br>
+
+</body>
+</html>
