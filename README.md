@@ -4,16 +4,20 @@
 ```
 git clone https://github.com/o-ddong/DjangoCheckAPI.git
 ```
+### 가상환경 생성
+```
+python3 -m venv venv
+```
 
 ### 가상환경 접속
 ```
-source /myvenv/bin/activate
+source /venv/bin/activate
 ```
 
-### request 설치
+### requestments 설치
 request 파일 경로가 있는 곳에서 다음과 같이 실행해주면 된다.
 ```
-pip install -r request
+pip install -r requestments
 ```
 
 ### requestments
@@ -32,7 +36,7 @@ sqlparse==0.4.2
 
 ### 서버 실행
 ```
-python3 manage.py runserver 0.0.0.0:5590
+python3 manage.py runserver 0.0.0.0:8000
 ```
 
 ---
